@@ -15,12 +15,10 @@ namespace XResideMenu
 	public class MainActivity : Activity
 	{
 		private ResideMenu resideMenu;
-		//private MainActivity mContext;
 		private ResideMenuItem itemHome;
 		private ResideMenuItem itemProfile;
 		private ResideMenuItem itemCalendar;
 		private ResideMenuItem itemSettings;
-
 
 		protected override void OnCreate (Bundle bundle)
 		{
@@ -29,14 +27,9 @@ namespace XResideMenu
 			// Set our view from the "main" layout resource
 			SetContentView (Resource.Layout.main);
 
-
 			SetUpMenu ();
 			ChangeFragment (new HomeFragment ());
-			// Get our button from the layout resource,
-			// and attach an event to it
-
-		
-
+	
 		}
 
 		private void SetUpMenu()
@@ -47,8 +40,6 @@ namespace XResideMenu
 
 			resideMenu.SetBackground(Resource.Drawable.menu_background);
 			resideMenu.AttachToActivity(this);
-			//resideMenu.OpenMenuEvent += async (sender, e) => ;
-			//valid scale factor is between 0.0f and 1.0f. leftmenu'width is 150dip. 
 			resideMenu.SetScaleValue(0.6f);
 
 			// create menu items;
@@ -56,11 +47,6 @@ namespace XResideMenu
 			itemProfile  = new ResideMenuItem(this, Resource.Drawable.icon_profile,  "Profile");
 			itemCalendar = new ResideMenuItem(this, Resource.Drawable.icon_calendar, "Calendar");
 			itemSettings = new ResideMenuItem(this, Resource.Drawable.icon_settings, "Settings");
-
-//			itemHome.setOnClickListener(this);
-//			itemProfile.setOnClickListener(this);
-//			itemCalendar.setOnClickListener(this);
-//			itemSettings.setOnClickListener(this);
 
 			resideMenu.AddMenuItem(itemHome, ResideMenu.DirectionLeft);
 			resideMenu.AddMenuItem(itemProfile, ResideMenu.DirectionRight);
