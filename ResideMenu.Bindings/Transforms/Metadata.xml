@@ -1,0 +1,17 @@
+﻿<metadata>
+   <remove-node path="/api/package[@name='com.nineoldandroids.animation']/class[@name='AnimatorSet']/method[@name='setDuration' and count(parameter)=1 and parameter[1][@type='long']]" />
+   
+   <remove-node path="/api/package[@name='com.nineoldandroids.animation']/class[@name='ValueAnimator']/method[@name='setDuration' and count(parameter)=1 and parameter[1][@type='long']]" />
+   <remove-node path="/api/package[@name='com.nineoldandroids.animation']/class[@name='AnimatorSet']" />
+   <remove-node path="/api/package[@name='com.nineoldandroids.animation']/class[@name='ValueAnimator']" />
+
+   <remove-node path="/api/package[@name='com.nineoldandroids.animation']/class[@name='PropertyValuesHolder.FloatPropertyValuesHolder']/constructor[@name='PropertyValuesHolder.FloatPropertyValuesHolder' and count(parameter)=2 and parameter[1][@type='java.lang.String'] and parameter[2][@type='com.nineoldandroids.animation.FloatKeyframeSet']]"/>
+
+   <remove-node  path="/api/package[@name='com.nineoldandroids.animation']/class[@name='PropertyValuesHolder.IntPropertyValuesHolder']/constructor[@name='PropertyValuesHolder.IntPropertyValuesHolder' and count(parameter)=2 and parameter[1][@type='java.lang.String'] and parameter[2][@type='com.nineoldandroids.animation.IntKeyframeSet']]" /> 
+   <remove-node path="/api/package[@name='com.nineoldandroids.animation']/class[@name='PropertyValuesHolder.IntPropertyValuesHolder']/constructor[@name='PropertyValuesHolder.IntPropertyValuesHolder' and count(parameter)=2 and parameter[1][@type='com.nineoldandroids.util.Property'] and parameter[2][@type='com.nineoldandroids.animation.IntKeyframeSet']]" />
+
+   <remove-node path="/api/package[@name='com.nineoldandroids.animation']/class[@name='PropertyValuesHolder.FloatPropertyValuesHolder']/constructor[@name='PropertyValuesHolder.FloatPropertyValuesHolder' and count(parameter)=2 and parameter[1][@type='com.nineoldandroids.util.Property'] and parameter[2][@type='com.nineoldandroids.animation.FloatKeyframeSet']]" />
+   <attr path="/api/package[@name='com.special.residemenu']" name="managedName">Custom.ResideMenu</attr>
+   <attr path="/api/package[@name='com.special.residemenu.ResideMenuItem']" name="managedName">Custom.ResideMenuItem</attr>
+</metadata>
+  
